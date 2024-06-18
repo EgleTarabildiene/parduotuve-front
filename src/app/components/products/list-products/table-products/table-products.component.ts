@@ -3,6 +3,7 @@ import { ProductsService } from '../../../../services/products.service';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { Product } from '../../../../models/product';
+import { AuthService } from '../../../../services/auth.service';
 
 @Component({
   selector: 'app-table-products',
@@ -20,7 +21,7 @@ public products:Product[]=[];
     });
   }
 
-  constructor (private productsService:ProductsService){
+  constructor (private productsService:ProductsService, public authService:AuthService){
     this.loadProducts();
   }
 
