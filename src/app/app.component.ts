@@ -8,7 +8,7 @@ import { ErrorBlockComponent } from './components/helper/error-block/error-block
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CalculatorComponent, CommonModule, NavigationComponent, ErrorBlockComponent],
+  imports: [RouterOutlet, CalculatorComponent, NavigationComponent, CommonModule, ErrorBlockComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

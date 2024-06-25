@@ -4,7 +4,7 @@ import { EventEmitter, Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ErrorService {
-  
-public errorEmitter=new EventEmitter<String>();
+  //Objektas kuriam perduosime informaciją apie klaida (komponentai išsiųs, o subscriberiai pasiims)
+  public errorEmitter=new EventEmitter<String>();
   constructor() { }
 }
